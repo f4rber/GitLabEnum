@@ -16,7 +16,8 @@ parser.add_argument("-r", "--range", help="range of ids (500)", type=int, defaul
 parser.add_argument("-d", "--delay", help="delay between requests (1)", type=int, default=1)
 parser.add_argument("-u", "--url", help="url (http://site.com)", type=str, required=True)
 parser.add_argument("-f", "--file", help="file with usernames", type=str, default="usernames.txt")
-parser.add_argument("-m", "--mode", help="1 - site.com/USERNAME; 2 - site.com/users/USERNAME/exists",
+parser.add_argument("-m", "--mode",
+                    help="1-(/USERNAME);2-(/users/USERNAME/exists);3-(/api/v4/users/ID);4-(/explore/groups.json)",
                     choices=[1, 2, 3, 4], type=int, required=True)
 parser.add_argument("-v", "--verbose", help="verbose", action="store_true")
 args = parser.parse_args()
