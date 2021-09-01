@@ -17,7 +17,7 @@ optional arguments:
   -u URL, --url URL     url (http://site.com)
   -f FILE, --file FILE  file with usernames
   -m {1,2,3,4}, --mode {1,2,3,4}
-                        1 - site.com/USERNAME; 2 - site.com/users/USERNAME/exists
+                        1-/USERNAME; 2-/users/USERNAME/exists; 3-/api/v4/users/ID; 4-/explore/groups.json
   -v, --verbose         verbose
 ```
 
